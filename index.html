@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="en" />
+  <link rel="shortlink" href="https://www.abhaypai.info/" />
+  <link rel="canonical" href="https://www.abhaypai.info/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Image Effect Zoom</title>
+  <style>
+    body {
+      margin: 0px;
+      background-color: #ccc;
+    }
+    .image--effect__zoom-wrapper {
+      padding: 10px;
+      outline: none;
+      cursor: pointer;
+      overflow: hidden;
+      max-width: 250px;
+      margin: 20px auto;
+      min-height: 250px;
+      position: relative;
+      background-color: #ededed;
+    }
+    .image--effect__zoom-image {
+      width: 100%;
+      height: auto;
+      transition: all ease-in-out 500ms;
+      -moz-transition: all ease-in-out 500ms;
+      -o-transition: all ease-in-out 500ms;
+      -webkit-transition: all ease-in-out 500ms;
+    }
+    .image--effect__zoom-caption {
+      left: 0;
+      right: 0px;
+      bottom: 0px;
+      padding: 5px;
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+      position: absolute;
+      background-color: #337ab7;
+    }
+    .image--effect__zoom-wrapper:hover .image--effect__zoom-image,
+    .image--effect__zoom-wrapper:focus .image--effect__zoom-image,
+    .image--effect__zoom-wrapper:focus-visible .image--effect__zoom-image,
+    .image--effect__zoom-wrapper:focus-within .image--effect__zoom-image,
+    .image--effect__zoom-wrapper:active .image--effect__zoom-image {
+      transform: scale(1.5);
+      -o-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+    }
+    .image--effect__zoom-caption h2,
+    .image--effect__zoom-caption p {
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <figure class="image--effect__zoom-wrapper">
+    <img src="https://via.placeholder.com/500/fff/337ab7/?text=Abhay+Pai" alt="Abhay Pai" class="image--effect__zoom-image">
+    <figcaption class="image--effect__zoom-caption">
+      <h2>CSS Image Effect Zoom</h2>
+      <p>To check effect you can scroll mouse over this image.</p>
+    </figcaption>
+  </figure>
+</body>
+</html>
